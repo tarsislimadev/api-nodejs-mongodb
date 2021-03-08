@@ -1,0 +1,13 @@
+{
+  "name": "api",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "south",
+    "system"
+  ],
+  "author": "Tarsis de Lima (https://github.com/tmvdl)",
+  "license": "MIT"
+}
