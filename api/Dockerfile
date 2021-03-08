@@ -6,3 +6,4 @@ RUN apt update -y
 
 COPY . .
 
+RUN yarn
