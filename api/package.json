@@ -9,5 +9,9 @@
     "system"
   ],
   "author": "Tarsis de Lima (https://github.com/tmvdl)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@overnightjs/core": "^1.7.5",
+    "express": "^4.17.1"
+  }
 }
