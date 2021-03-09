@@ -1,5 +1,11 @@
-version: '3'
+version: "3"
 
-services: 
+services:
   api:
     build: ./api
+    volumes:
+      - ./api:/app
+    environment:
+      - ENV=development
+    ports:
+      - "8000:3000"
