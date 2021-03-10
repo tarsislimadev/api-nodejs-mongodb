@@ -35,15 +35,9 @@
     "noUncheckedIndexedAccess": true,
     "noPropertyAccessFromIndexSignature": true,
     // "moduleResolution": "node",
-    // "baseUrl": "./",
-    "paths": {
-      "@src/*": [
-        "./src/*"
-      ]
-    },
-    "rootDirs": [
-      "./src"
-    ],
+    // "baseUrl": ".",
+    // "paths": {},
+    // "rootDirs": [],
     // "typeRoots": [],
     // "types": [],
     // "allowSyntheticDefaultImports": true,
@@ -58,12 +52,5 @@
     "emitDecoratorMetadata": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
-  },
-  "include": [
-    "./src/**/*.ts"
-  ],
-  "exclude": [
-    "./node_modules/*",
-    "dist"
-  ]
+  }
 }
