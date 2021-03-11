@@ -6,7 +6,7 @@ module.exports = {
       data
     })
   },
-  reponseNOK (res, status = 500, message = 'Server error') {
+  responseNOK (res, status = 500, message = 'Server error') {
     res.status(status).json({
       message
     })
