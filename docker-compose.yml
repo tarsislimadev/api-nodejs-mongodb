@@ -3,9 +3,5 @@ version: "3"
 services:
   api:
     build: ./api
-    volumes:
-      - ./api:/app
-    environment:
-      - ENV=development
     ports:
       - "3000:3000"
