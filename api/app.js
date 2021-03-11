@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const { isAuth } = require('./middlewares')
+const { isAuth } = require('./middlewares/auth')
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
