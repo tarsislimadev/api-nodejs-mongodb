@@ -8,4 +8,4 @@ services:
     environment:
       - ENV=development
     ports:
-      - "8000:3000"
+      - "3000:3000"
