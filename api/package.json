@@ -4,11 +4,13 @@
   "private": true,
   "scripts": {
     "test": "mocha tests/*",
+    "migrations": "node ./migrations.js",
     "start": "node ./bin/www"
   },
   "dependencies": {
     "debug": "~2.6.9",
-    "express": "~4.16.1"
+    "express": "~4.16.1",
+    "mongoose": "^5.11.15"
   },
   "devDependencies": {
     "@types/supertest": "^2.0.10",
