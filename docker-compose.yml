@@ -1,6 +1,10 @@
 version: "3"
 
 services:
+  database:
+    build: ./database
+    ports:
+      - "27017:27017"
   api:
     build: ./api
     ports:
