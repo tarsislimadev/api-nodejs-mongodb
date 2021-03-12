@@ -1,9 +1,13 @@
 FROM node:15.11
 
+ENV DB_URL=mongodb://database:27017/south
+
 WORKDIR /app
 
 COPY . .
 
-RUN yarn
+RUN npm ci
 
-CMD yarn start
+RUN npm run migrations
+
+CMD npm start
