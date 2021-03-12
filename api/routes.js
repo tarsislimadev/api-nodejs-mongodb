@@ -1,27 +1,18 @@
-const users = require('./controllers/users')
-const products = require('./controllers/products')
-const login = require('./controllers/login')
-const { isAuth } = require('./middlewares/auth')
+const { UsersController, LoginController } = require('./controllers')
+const { auth } = require('./middlewares')
 
 const router = require('express').Router()
 
 router.get('/', (req, res) => res.send({ api: 'South System' }))
 
 // login routes
-router.post('/login', login.login)
+router.post('/login', LoginController.login)
 
 // user's routes
-router.get('/users', isAuth, users.list)
-router.get('/users/:id', isAuth, users.get)
-router.post('/users', isAuth, users.create)
-router.put('/users', isAuth, users.edit)
-router.delete('/users', isAuth, users.delete)
-
-// product's routes
-router.get('/products', isAuth, products.list)
-router.get('/products/:id', isAuth, products.get)
-router.post('/products', isAuth, products.create)
-router.put('/products', isAuth, products.edit)
-router.delete('/products', isAuth, products.delete)
+router.get('/users', auth, UsersController.list)
+router.get('/users/:id', auth, UsersController.get)
+router.post('/users', auth, UsersController.create)
+router.put('/users', auth, UsersController.edit)
+router.delete('/users', auth, UsersController.delete)
 
 module.exports = router
