@@ -1,0 +1,265 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2021-03-12T18:26:21.100Z",
+  "__export_source": "insomnia.desktop.app:v2020.5.2",
+  "resources": [
+    {
+      "_id": "req_f32131661d404a35ac2f3eaea3f7fe3c",
+      "parentId": "fld_2bf57892c30d48e3874a927484f20178",
+      "modified": 1615573108134,
+      "created": 1615572862523,
+      "url": "http://localhost:3000/users",
+      "name": "Listar usuários",
+      "description": "",
+      "method": "GET",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"key\": \"40002558836195611615570266727\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_3c535fdd8c9549e7a863bf9b6cfc0469"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1615572962594,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_2bf57892c30d48e3874a927484f20178",
+      "parentId": "wrk_c07a357332c247499924ec1f0254f430",
+      "modified": 1615573095471,
+      "created": 1615573095471,
+      "name": "Usuários",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1615573095471,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_c07a357332c247499924ec1f0254f430",
+      "parentId": null,
+      "modified": 1615513532849,
+      "created": 1615513532849,
+      "name": "API Node.js MongoDB",
+      "description": "",
+      "scope": null,
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_cb07c336012a497cb30328f24c2abbec",
+      "parentId": "fld_2bf57892c30d48e3874a927484f20178",
+      "modified": 1615573111081,
+      "created": 1615572962344,
+      "url": "http://localhost:3000/users/604ba5734e397f39352876a3",
+      "name": "Recuperar usuário",
+      "description": "",
+      "method": "GET",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"key\": \"40002558836195611615570266727\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_f47f91dc7abf47e2b253978560060e4a"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1615572962569,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_7e1e1e73097a40ffa4d076db954ccf10",
+      "parentId": "fld_2bf57892c30d48e3874a927484f20178",
+      "modified": 1615573105509,
+      "created": 1615526322112,
+      "url": "http://localhost:3000/users",
+      "name": "Criar novo usuário",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"key\": \"40002558836195611615570266727\",\n\t\"username\": \"username\",\n\t\"password\": \"password\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_139950c8fd7943558686b4a0674695c9"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1615572962544,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_9463b53b7bed4bc6bce51adb4cf0b751",
+      "parentId": "fld_2bf57892c30d48e3874a927484f20178",
+      "modified": 1615573103634,
+      "created": 1615571534060,
+      "url": "http://localhost:3000/users",
+      "name": "Editar usuário",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"key\": \"40002558836195611615570266727\",\n\t\"id\": \"604ba9d7c5e15f44567b6217\",\n\t\"permissions\": [\n\t\t\"createUsers\"\n\t]\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_86c367e0898648bb89529cadbc6658aa"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1615572962494,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_76486297b53c43e89cdc88d13fc2acdd",
+      "parentId": "fld_2bf57892c30d48e3874a927484f20178",
+      "modified": 1615573101766,
+      "created": 1615572806350,
+      "url": "http://localhost:3000/users",
+      "name": "Remover usuário",
+      "description": "",
+      "method": "DELETE",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"key\": \"40002558836195611615570266727\",\n\t\"id\": \"604ba9d7c5e15f44567b6217\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_184d9ad910674619bc1c5556029ff3e1"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1615572962444,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_1fa56bd8af5c4681a2ba6c5539b688b5",
+      "parentId": "wrk_c07a357332c247499924ec1f0254f430",
+      "modified": 1615526227162,
+      "created": 1615513601291,
+      "url": "http://localhost:3000/login",
+      "name": "Login",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"username\": \"username\",\n\t\"password\": \"password\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_ab5fb8e23bdc44aabfc942a1301a1fe1"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1615513601291,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_4e0cafa8df4c86e9b073523aea93069b258444f3",
+      "parentId": "wrk_c07a357332c247499924ec1f0254f430",
+      "modified": 1615513694465,
+      "created": 1615513533098,
+      "name": "Base Environment",
+      "data": {
+        "{% request 'header', '', 0 %}": {
+          "": ""
+        }
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "{% request 'header', '', 0 %}"
+        ],
+        "&~|{% request 'header', '', 0 %}": [
+          ""
+        ]
+      },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1615513533098,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_4e0cafa8df4c86e9b073523aea93069b258444f3",
+      "parentId": "wrk_c07a357332c247499924ec1f0254f430",
+      "modified": 1615513533111,
+      "created": 1615513533111,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_0f09b61ce4b54a75bbe87b7fd911c37c",
+      "parentId": "wrk_c07a357332c247499924ec1f0254f430",
+      "modified": 1615513532861,
+      "created": 1615513532861,
+      "fileName": "API Node.js MongoDB",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    }
+  ]
+}
