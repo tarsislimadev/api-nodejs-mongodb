@@ -1,7 +1,7 @@
 
 const ok = (res) => {
   res.ok = (data = null) =>
-    res.status(200).json({ ...data, message: null, status: 'success' })
+    res.status(200).json({ data, message: null, status: 'success' })
 }
 
 const nok = (res) => {
