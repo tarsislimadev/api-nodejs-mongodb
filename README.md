@@ -1,15 +1,11 @@
-# api-loja-simples
-
-## Sobre o projeto
-
-Projeto desenvolvido para disputar a vaga de Desenvolvedor Node.js na South System.
+# API Node.js MongoDB
 
 ## Configurar
 
 Baixe esse repositório
 
 ```bash
-git clone https://github.com/tmvdl/api-loja-simples.git
+git clone https://github.com/tmvdl/api-nodejs-mongodb.git
 ```
 
 Execute o projeto com o Docker Compose
