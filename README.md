@@ -27,8 +27,8 @@ Importe o arquivo [api-node-mongo.json](api-node-mongo.json) no [Insomnia REST](
 ```json
 // POST /login
 {
-	"username": "username",
-	"password": "password"
+  "username": "username",
+  "password": "password"
 }
 ```
 
@@ -37,9 +37,9 @@ Importe o arquivo [api-node-mongo.json](api-node-mongo.json) no [Insomnia REST](
 ```json
 // POST /users
 {
-	"key": "1234567890",
-	"username": "username",
-	"password": "password",
+  "key": "1234567890",
+  "username": "username",
+  "password": "password",
   "permissions": [
     "createProducts",
     "editProducts",
@@ -53,10 +53,10 @@ Importe o arquivo [api-node-mongo.json](api-node-mongo.json) no [Insomnia REST](
 ```json
 // PUT /users
 {
-	"key": "1234567890",
+  "key": "1234567890",
   "id": "0987654321",
-	"username": "username",
-	"password": "password",
+  "username": "username",
+  "password": "password",
   "permissions": [
     "createProducts",
     "editProducts",
@@ -70,7 +70,7 @@ Importe o arquivo [api-node-mongo.json](api-node-mongo.json) no [Insomnia REST](
 ```json
 // DELETE /users
 {
-	"key": "1234567890",
+  "key": "1234567890",
   "id": "0987654321"
 }
 ```
