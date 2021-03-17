@@ -1,14 +1,17 @@
-const { LoginSessionModel } = require('../models')
+const SessionData = require('./app/data/session.data')
+const { HttpError } = require('./utils/errors')
 
 module.exports = {
   async auth ({ body: { key } }, res, next) {
     try {
-      const { deleted } = await LoginSessionModel.findOne({ key })
-      if (deleted > Date.now()) {
+      const { expires } = await SessionData.getSession(key)
+      if (expires >= Date.now()) {
         next()
-        return
+      } else {
+        throw new HttpError(403, 'Expired session.')
       }
-    } catch (error) {}
-    res.nok(403, 'Authorization is required.')
+    } catch (error) {
+      res.error(error)
+    }
   }
 }
