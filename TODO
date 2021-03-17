@@ -1,0 +1,5 @@
+
+Verificar Status Code
+Fazer os testes unitários
+Refatorar o arquivo de /api/utils/errors.js para varios arquivos
+Depois de remover um usuário, todas as sessões dele devem ser invalidadas
