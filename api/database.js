@@ -4,7 +4,9 @@ const { DB_URL: connectionString } = process.env
 
 mongoose.connect(connectionString, {
   useNewUrlParser: true,
-  useUnifiedTopology: true
+  useUnifiedTopology: true,
+  connectTimeoutMS: 10000,
+  keepAlive: 1
 })
 
 module.exports = {
