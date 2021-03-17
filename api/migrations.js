@@ -1,4 +1,12 @@
-const { mongoose, UserModel } = require('./models')
+const { mongoose } = require('./database')
+const { permissions } = require('./helpers/constants.js')
+const { createUser } = require('./app/data/users.data')
 
-new Promise(resolve => UserModel.create({ username: 'username', password: 'password' }, resolve))
-  .finally(() => mongoose.disconnect())
+createUser({
+  username: 'username',
+  password: 'username',
+  permissions: permissions.map(({ name }) => name)
+})
+  .then(() => mongoose.connection?.close())
+  .catch(error => console.error(error))
+  .finally(() => console.log('Migration OK'))
