@@ -1,5 +1,4 @@
-const { PermissionError } = require('../utils/errors')
-const { findPermission } = require('../helpers/constants')
+const { PermissionError } = require('../errors/http.error')
 const SessionData = require('../app/data/session.data')
 
 const validate = async (session, permission) => {
@@ -7,7 +6,7 @@ const validate = async (session, permission) => {
   const sessionPermission = sessionPermissions?.find(permissionName => permissionName === permission)
 
   if (!sessionPermission) {
-    throw new PermissionError(findPermission(permission))
+    throw new PermissionError(permission)
   }
 }
 

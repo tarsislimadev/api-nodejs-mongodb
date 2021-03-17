@@ -7,9 +7,9 @@ const ok = (res) => {
 }
 
 const error = (res) => {
-  const status = 'status'
+  const status = 'error'
   res.error = (error) => {
-    console.error({ error })
+    // console.error({ error })
     const { status: statusCode = 500, message = 'Server error', data = null } = error
     res.status(statusCode).json({ data, message, status })
   }

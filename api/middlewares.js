@@ -1,5 +1,5 @@
 const SessionData = require('./app/data/session.data')
-const { HttpError } = require('./utils/errors')
+const { HttpError } = require('./errors/http.error')
 
 module.exports = {
   async auth ({ body: { key } }, res, next) {
