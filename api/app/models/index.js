@@ -1,4 +1,4 @@
-const { mongoose } = require('../database')
+const { mongoose } = require('../../database')
 const { UserModel } = require('./userModel')
 const { LoginSessionModel } = require('./loginSessionModel')
 
