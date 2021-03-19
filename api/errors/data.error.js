@@ -9,7 +9,7 @@ class UserNotFoundError extends DataError {
 }
 
 class UserExistsError extends DataError {
-  constructor () { super('User exists.') }
+  constructor () { super('User exists.', 409) }
 }
 
 class UserNotUpdatedError extends DataError {
