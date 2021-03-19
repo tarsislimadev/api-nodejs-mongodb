@@ -1,7 +1,7 @@
 const {
   LoginRoute,
   UsersRoute
-} = require('./app/routes')
+} = require('./src/routes')
 
 const router = require('express').Router()
 

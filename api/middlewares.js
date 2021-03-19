@@ -1,4 +1,4 @@
-const SessionData = require('./app/data/session.data')
+const SessionData = require('./src/data/session.data')
 const { HttpError } = require('./errors/http.error')
 
 module.exports = {

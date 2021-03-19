@@ -1,5 +1,5 @@
 const { PermissionError } = require('../errors/http.error')
-const SessionData = require('../app/data/session.data')
+const SessionData = require('../src/data/session.data')
 
 const validate = async (session, permission) => {
   const { permissions: sessionPermissions } = await SessionData.getSession(session)

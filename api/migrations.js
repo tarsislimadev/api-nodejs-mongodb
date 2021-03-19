@@ -1,6 +1,6 @@
 const { mongoose } = require('./database')
 const { permissions } = require('./helpers/constants.js')
-const { createUser } = require('./app/data/users.data')
+const { createUser } = require('./src/data/users.data')
 
 createUser({
   username: 'username',
