@@ -3,6 +3,11 @@ class HttpError extends Error {
     super(message)
 
     this.status = status
+    this.saveLog()
+  }
+
+  saveLog () {
+    // TODO
   }
 }
 
