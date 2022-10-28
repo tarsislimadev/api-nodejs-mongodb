@@ -1,5 +1,7 @@
 # API Node.js MongoDB
 
+Exemplo de projeto em Node.js e MongoDB
+
 ## Configurar
 
 Baixe esse repositório
